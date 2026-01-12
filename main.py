@@ -1,8 +1,13 @@
 import pandas as pd
 import matplotlib.pyplot as plt
+import os
+
+# Create an assets directoy to store visualizations
+os.makedirs('assets', exist_ok=True)
 
 data = pd.read_csv('data/data.csv')
 plt.scatter(data.study_hours, data.scores)
+plt.savefig('assets/scatterplot.png')
 plt.show()
 
 # Function for loss function
@@ -45,4 +50,5 @@ for i in range(epochs):
 print(m ,b)
 plt.scatter(data.study_hours, data.scores, color="black")
 plt.plot(list(range(20, 80)), [m * x + b for x in range(20, 80)], color="red")
+plt.savefig('assets/regressionline.png')
 plt.show()
