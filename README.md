@@ -4,6 +4,8 @@ A Python implementation of linear regression built from first principles, demons
 
 ## Overview
 
+![Data Points](assets/scatterplot.png)
+
 This project implements linear regression using **gradient descent** to find the optimal line of best fit for a given dataset. The implementation includes:
 
 - Manual calculation of loss function (Mean Squared Error)
@@ -11,6 +13,7 @@ This project implements linear regression using **gradient descent** to find the
 - Data visualization with scatter plots and regression lines
 - Study hours vs. test scores prediction
 
+![Regression Line](assets/regressionline.png)
 ## Requirements
 
 - Python 3.x
